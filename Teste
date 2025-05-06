@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerador de Verso</title>
+</head>
+<body>
+  <h1>Gerador de Versos</h1>
+  <button onclick="gerarVerso()">Gerar Verso</button>
+  <p id="verso"></p>
+
+  <script>
+    const versos = [
+      "No céu brilhava a estrela solitária,",
+      "O vento sussurrava segredos do mar,",
+      "A noite escondia mil histórias,",
+      "O coração queria se declarar.",
+    ];
+
+    function gerarVerso() {
+      const versoAleatorio = versos[Math.floor(Math.random() * versos.length)];
+      document.getElementById("verso").innerText = versoAleatorio;
+    }
+  </script>
+</body>
+</html>
